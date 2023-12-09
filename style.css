@@ -52,12 +52,17 @@ body {
     font-family: var(--font-family-base);
 }
 
+.container {
+    max-width: 1066px;
+    margin: 0 auto;
+}
+
 /* HEADER */
 .page-header {
     display: flex;
     justify-content: space-between;
     background-color: var(--color-black-block);
-    padding: 17px 0;
+    padding-block: 20px;
     padding-inline: var(--inline-block-padding);
 }
 
@@ -114,12 +119,174 @@ body {
 }
 
 
+/* HERO */
+
+.hero {
+    background-image: url('./images/hero-background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-inline: var(--inline-block-padding);
+    position: relative;
+    padding-bottom: 114px;
+}
+
+.hero-blocks-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 30px;
+
+}
+
+.navigation-link-item {
+    text-decoration: none;
+    color: rgba(20, 20, 20, 0.70);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.add-color-link {
+    color: var(--color-altarnative);
+}
+
+.info-hero-wrapper {
+    max-width: 432px;
+}
+
+.info-hero-wrapper h2 {
+    color: var(--color-altarnative);
+    font-size: 31px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.info-hero-wrapper h3 {
+    font-size: 31px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.navigation-hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.subtitle-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-hero {
+    display: inline-block;
+    background-color: var(--color-altarnative);
+    padding: 16px 61px;
+    border-radius: 50px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.img-hero-block-wrapper img {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: min(45.82vw, 626px);
+    height: min(30.30vw, 414px);
+}
+
+/* ABOUT-US */
+
+.about-us {
+    background-color: var(--color-altarnative);
+    color: var(--color-white);
+}
+
+.about-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1066px;
+    margin-inline: auto;
+    gap: 50px;
+    background-image: url('./images/about-us-background-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 543px 70px 90px;
+    margin-top: -66px;
+    z-index: 1;
+    position: relative;
+    border-radius: 20px;
+}
+
+.subtitle-about-us {
+    max-width: 432px;
+}
+
+.our-services {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    max-width: 885px;
+    gap: 50px;
+}
 
 
 
 
+.our-services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 252px);
+    list-style-type: none;
+    column-gap: 65px;
+}
 
+.our-services-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.services-first::before {
+    content: "";
+    display: block;
+    background-image: url('./icons/ship-about-us-services.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 42px;
+    height: 42px;
+
+}
+
+.title-services {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.services-second::before {
+    content: "";
+    display: block;
+    background-image: url('./icons/about-us-recycling-services.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 42px;
+    height: 42px;
+}
+
+.services-third::before {
+    content: "";
+    display: block;
+    background-image: url('./icons/about-us-services-money-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 42px;
+    height: 42px;
+}
 
 /* ADAPTIVE */
 
@@ -139,6 +306,7 @@ body {
     .page-header {
         flex-direction: column;
         align-items: flex-start;
+        gap: 12px;
     }
 
     .navigation-user-list {
