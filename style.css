@@ -207,6 +207,17 @@ body {
     color: var(--color-white);
 }
 
+.about-us-wrapper h2 {
+    font-size: 31px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.about-us-wrapper h2 span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .about-us-wrapper {
     display: flex;
     flex-direction: column;
@@ -224,6 +235,17 @@ body {
     border-radius: 20px;
 }
 
+.about-us-wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url('./images/decoration-background-us-block.svg');
+    background-repeat: no-repeat;
+    width: 340px;
+    height: 50px;
+    right: 5px;
+    top: 82px;
+}
+
 .subtitle-about-us {
     max-width: 432px;
 }
@@ -234,6 +256,29 @@ body {
     margin-inline: auto;
     max-width: 885px;
     gap: 50px;
+    margin-top: 70px;
+    
+}
+
+.our-services::after {
+    content: "";
+    position: absolute;
+    background-image: url('./images/our-services-decorstion-background.svg');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 50px;
+    right: 0px;
+}
+
+.our-services h3 {
+    font-size: 31px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.our-services h3 span {
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 
@@ -286,6 +331,14 @@ body {
     background-position: center;
     width: 42px;
     height: 42px;
+}
+
+/* USER-UNFO */
+
+.user-info {
+    background-image: url('./images/user-info-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ADAPTIVE */
