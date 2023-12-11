@@ -45,6 +45,8 @@
     --color-altarnative: #FB6535;
     --color-white: #fff;
     --font-family-base: 'Poppins';
+
+    --input-padding: 13px 50px 13px 27px;
 }
 
 body {
@@ -205,6 +207,7 @@ body {
 .about-us {
     background-color: var(--color-altarnative);
     color: var(--color-white);
+    padding-bottom: 50px;
 }
 
 .about-us-wrapper h2 {
@@ -250,6 +253,17 @@ body {
     max-width: 432px;
 }
 
+.about-us::after {
+    content: "";
+    position: absolute;
+    background-image: url('./icons/about-us-decoration-icon-bottom.svg');
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 28px;
+    top: -2;
+
+}
+
 .our-services {
     display: flex;
     flex-direction: column;
@@ -280,9 +294,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
-
-
-
 
 .our-services-list {
     display: grid;
@@ -339,6 +350,102 @@ body {
     background-image: url('./images/user-info-background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    padding-block: 60px;
+}
+
+.user-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: none;
+}
+
+.user-info-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.input-field {
+    padding: var(--input-padding);
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(20, 20, 20, 0.90);
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.add-input-field {
+    height: 225px;
+}
+
+.button-user-info {
+    background-color: var(--color-altarnative);
+    border-radius: 10px;
+    border: none;
+    padding-block: 15px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.user-info-map-wrapper img {
+    display: block;
+    border-radius: 25px;
+}
+
+.title-user-info {
+    font-size: 31px;
+    font-weight: 300;
+}
+
+.user-info-map-wrapper {
+    position: relative;
+}
+
+.title-user-info span {
+    color: var(--color-altarnative);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.block-info-map-list {
+    list-style-type: none;
+}
+
+.block-info-map-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.block-map-info {
+    background-color: var(--color-altarnative);
+    max-width: 296px;
+    padding: 40px 54px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.block-map-info::after {
+    content: "";
+    position: absolute;
+    background-image: url('./icons/about-us-decoration-icon-bottom.svg');
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 28px;
+    bottom: 0;
 }
 
 /* ADAPTIVE */
