@@ -241,11 +241,11 @@ body {
 .about-us-wrapper::after {
     content: "";
     position: absolute;
-    background-image: url('./images/decoration-background-us-block.svg');
+    background-image: url('./icons/decoration-background-us-block.svg');
     background-repeat: no-repeat;
     width: 340px;
     height: 50px;
-    right: 5px;
+    right: 0;
     top: 82px;
 }
 
@@ -357,6 +357,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 55px;
+    align-items: center;
 }
 
 .field {
@@ -384,6 +385,21 @@ body {
     height: 225px;
 }
 
+.add-icon {
+    position: relative;
+}
+
+.add-icon::after {
+    content: "";
+    position: absolute;
+    background-image: url("./icons/icon-input-about-us-after.svg");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 8px;
+    bottom: 0;
+    right: 0;
+}
+
 .button-user-info {
     background-color: var(--color-altarnative);
     border-radius: 10px;
@@ -399,7 +415,6 @@ body {
 
 .user-info-map-wrapper img {
     display: block;
-    border-radius: 25px;
 }
 
 .title-user-info {
@@ -409,6 +424,8 @@ body {
 
 .user-info-map-wrapper {
     position: relative;
+    border-radius: 25px;
+    box-shadow: 1px 4px 23px -5px;
 }
 
 .title-user-info span {
@@ -434,18 +451,48 @@ body {
     border-radius: 10px;
     text-align: center;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 60%;
+    transform: translateY(-60%);
+    right: 113px;
 }
 
 .block-map-info::after {
     content: "";
     position: absolute;
-    background-image: url('./icons/about-us-decoration-icon-bottom.svg');
+    background-image: url("./icons/about-us-decoration-icon-bottom.svg");
     background-repeat: no-repeat;
+    bottom: -28px;
     width: 53px;
     height: 28px;
-    bottom: 0;
+    right: 121px;
+}
+
+.block-map-info::before {
+    content: "";
+    position: absolute;
+    background-image: url("./icons/vector-navigation-icon-about-us-block.svg");
+    background-repeat: no-repeat;
+    bottom: -3px;
+    width: 12px;
+    height: 20px;
+    z-index: 10;
+    right: 141px;
+}
+
+/* FOOTER */
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 150px;
+    padding-block: 30px 35px;
+    align-items: flex-end;
+}
+
+.footer-navigation-user {
+    list-style-type: none;
+    display: flex;
+    gap: 26px;
 }
 
 /* ADAPTIVE */
